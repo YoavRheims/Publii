@@ -8,7 +8,7 @@
 
 {{#if @config.custom.shareTwitter}}
     <a href="https://twitter.com/share?url={{encodeUrlFragment url}}&amp;via={{#if @config.custom.shareTwitterName}}{{encodeUrlFragment @config.custom.shareTwitterName}}{{else}}{{encodeUrlFragment @website.name}}{{/if}}&amp;text={{encodeUrlFragment title}}" class="js-share twitter" title="{{ translate 'partials.shareButtons.shareWithTwitter' }}" target="_blank" rel="nofollow noopener noreferrer">
-        <svg class="u-icon">
+        <svg class="u-icon" role="img" aria-label="Share on Twitter">
             <use xlink:href="{{@website.assetsUrl}}/svg/svg-map.svg#twitter" />
         </svg>
     </a>
